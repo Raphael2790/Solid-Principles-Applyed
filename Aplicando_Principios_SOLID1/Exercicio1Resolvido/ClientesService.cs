@@ -4,11 +4,11 @@ using Aplicando_Principios_SOLID1.Exercicio1Resolvido.Interfaces;
 
 namespace cursoFoop_Exercicio_SOLID1
 {
-    public class GerenciadorClientes : IGerenciadorClientes
+    public class ClientesService : IGerenciadorClientes
     {
         private readonly IRepositorioClientes _repositorioClientes;
         private readonly IGeradorRelatoriosFactory _geradorRelatorios;
-        public GerenciadorClientes(IRepositorioClientes repositorioClientes, IGeradorRelatoriosFactory geradorRelatorios)
+        public ClientesService(IRepositorioClientes repositorioClientes, IGeradorRelatoriosFactory geradorRelatorios)
         {
             _repositorioClientes = repositorioClientes;
             _geradorRelatorios = geradorRelatorios;
